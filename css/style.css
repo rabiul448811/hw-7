@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    margin: auto;
+width: 800px;
+
+    background-color: brown;
+
+}
+nav ul li{
+    display:inline-block
+}
+nav ul li a{
+    display: block;
+    color: rgba(245, 240, 240, 0.938);
+    padding: 20px 25px;
+    transition: 03ms;
+    position: relative
+}
+nav ul li a:hover{
+    background-color: red;
+}
+  nav ul li a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    border-radius: 3px;
+background-color:rgb(27, 26, 134);
+position: absolute;
+bottom: 0;
+left: 0;
+transition: 0.5s;
+  }
+
+  nav ul li a::after{
+    content: '';
+    width:0 ;
+    height:3px ;
+    background-color: rgb(27, 26, 134);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+    border-radius: 3px;
+  }
+nav ul li a:hover::after{
+    top: 10px;
+}
+nav ul li ul{
+    opacity: 0.5;
+    margin: 20px;
+    transition: 0.5s;
+    visibility: hidden;
+    position: absolute;
+    background-color: brown;
+    width: 100px;
+}
+nav ul li ul li{
+    display: block;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+nav ul li ul li ul{
+    left: 100%;
+    top: 0;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    left: 10px;
+    top: 25px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+}
+
+nav ul li a:hover::after{
+    top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
